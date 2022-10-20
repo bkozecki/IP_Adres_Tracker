@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="main_header">IP Address Tracker</h1>
+      <div class="input_wraper">
+        <input
+          class="main_input"
+          placeholder="Search for any IP address or domain"
+          id="userInput"
+        />
+        <img src="./images/icon-arrow.svg" alt="arrow" class="icon" />
+      </div>
+      <div class="info_wrap">
+        <div class="info">
+          <h3 class="info_heading">IP Address</h3>
+          <span class="anwser" id="adress"></span>
+        </div>
+        <div class="info">
+          <h3 class="info_heading">Location</h3>
+          <span class="anwser" id="location"></span>
+        </div>
+        <div class="info">
+          <h3 class="info_heading">Timezone</h3>
+          <span class="anwser" id="timezone"></span>
+        </div>
+        <div class="info">
+          <h3 class="info_heading">ISP</h3>
+          <span class="anwser" id="isp"></span>
+        </div>
+      </div>
+    </header>
+    <div class="map" id="map"></div>
+  </body>
+</html>
